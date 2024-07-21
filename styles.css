@@ -1,0 +1,135 @@
+/* styles.css */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire container */
+    z-index: -1; /* Places the video behind the content */
+}
+
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+}
+
+header .logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+main {
+    padding: 20px;
+}
+
+.app-details {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: right;
+}
+
+.app-header {
+    display: flex;
+    align-items: center;
+    text-align: right;
+}
+
+.app-header img {
+    max-width: 100px;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.app-info h1 {
+    margin: 0;
+    text-align: right;
+}
+
+.app-info p {
+    margin: 5px 0 0;
+    text-align: right;
+}
+
+.app-screenshots {
+    margin-top: 20px;
+}
+
+.screenshots img {
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    header .logo img {
+        max-height: 40px;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+    /* styles.css */
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff; /* رنگ آیکون‌ها */
+    font-size: 1.5em; /* اندازه آیکون‌ها */
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: #ccc; /* رنگ آیکون‌ها هنگام هاور */
+}
+
+}
